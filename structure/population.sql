@@ -46,6 +46,27 @@ INSERT INTO Clientes (nombre, apellido, email, telefono) VALUES
 	('Pedro', 'Sánchez', 'pedro.sanchez@example.com', '+0123456789');
 -- 10 clientes
 
+INSERT INTO Datos (id_cliente, id_empleado) VALUES
+	(DEFAULT , DEFAULT),
+    (DEFAULT , DEFAULT),
+    (DEFAULT , DEFAULT),
+    (DEFAULT , DEFAULT),
+    (DEFAULT , DEFAULT),
+    (DEFAULT , DEFAULT),
+    (DEFAULT , DEFAULT),
+    (DEFAULT , DEFAULT),
+    (DEFAULT , DEFAULT),
+    (DEFAULT , DEFAULT),
+    (DEFAULT , DEFAULT),
+    (DEFAULT , DEFAULT),
+    (DEFAULT , DEFAULT),
+    (DEFAULT , DEFAULT),
+    (DEFAULT , DEFAULT),
+    (DEFAULT , DEFAULT),
+    (DEFAULT , DEFAULT),
+    (DEFAULT , DEFAULT),
+	(DEFAULT , DEFAULT);
+
 INSERT INTO Direcciones (id_dato, direccion_facturacion, direccion_envio) VALUES
 	(1, 'Calle de la Montaña 123', 'Apartado 10'),
 	(2, 'Avenida del Río 456', 'Buzón 25'),
