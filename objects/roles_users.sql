@@ -1,2 +1,0 @@
-
-USE alcol_drinks;
