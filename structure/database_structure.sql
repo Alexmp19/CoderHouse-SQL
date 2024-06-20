@@ -44,8 +44,8 @@ COMMENT 'Registra los datos de los relacionados con la empresa.';
 
 CREATE TABLE Informacion_Contacto (
 	id_info INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    telefono INT,
-    celular INT,
+    telefono BIGINT,
+    celular VARCHAR(20),
     email VARCHAR(250),
 	linkedin VARCHAR(250),
     instagram VARCHAR(250),
@@ -78,7 +78,7 @@ CREATE TABLE Informacion_Facturacion (
 	id_direccion INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     id_info INT NOT NULL,
     metodo_pago VARCHAR(20),
-    numero_tarjeta INT,
+    numero_tarjeta BIGINT,
     fecha_expedicion DATETIME,
     cvv INT,
     nombre_propietario VARCHAR(50),
@@ -149,7 +149,8 @@ CREATE TABLE Ventas (
 COMMENT 'Registra los pedidos con su fecha y su precio total.';
 
 CREATE TABLE Ventas_Productos (
-	id_venta INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	id_producto_vendido INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    id_venta INT NOT NULL,
     id_producto INT NOT NULL,
     cantidad INT DEFAULT 1,
 	FOREIGN KEY (id_venta) REFERENCES Ventas(id_venta),
