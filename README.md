@@ -12,8 +12,6 @@ Mi proyecto es una base de datos MySQL para mi proyecto de comercio de ventas de
 
 Nuestro proyecto de tienda necesita implementar un sistema de distribución para que los proveedores se contacten con nuestros encargados en esa área y también es preciso encontrar una forma de administrar y controlar los pedidos. Es necesario un sistema parecido para poder gestionar los envíos a nuestros clientes y almacenar información sobre ellos. Por último, sería útil almacenar información sobre nuestra empresa y empleados en caso de extravío de sus contactos, y para tener mayor control de stock y precios.
 
-https://lucid.app/lucidchart/331835ff-dfaa-459f-a945-97ea39d964ce/edit?viewport_loc=1519%2C1905%2C1159%2C540%2C0_0&invitationId=inv_39489e68-9218-4ab2-9fde-642c4184c549
-
 ## Descripción de Tablas
 
 ### Tabla 1: Empleados
