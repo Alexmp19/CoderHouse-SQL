@@ -20,7 +20,7 @@ CREATE TRIGGER copiar_datos_desde_empleados
 AFTER INSERT ON Empleados
 FOR EACH ROW
 BEGIN
-    INSERT INTO Datos (id_empleado) VALUES (NEW.id_empleado);
+    INSERT INTO Informacion (id_empleado) VALUES (NEW.id_empleado);
 END//
 DELIMITER ;
 
@@ -30,7 +30,7 @@ CREATE TRIGGER copiar_datos_desde_clientes
 AFTER INSERT ON Clientes
 FOR EACH ROW
 BEGIN
-    INSERT INTO Datos (id_cliente) VALUES (NEW.id_cliente);
+    INSERT INTO Informacion (id_cliente) VALUES (NEW.id_cliente);
 END//
 DELIMITER ;
 
